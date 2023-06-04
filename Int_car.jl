@@ -5,8 +5,8 @@ using LinearAlgebra
 size=(dpi=400)
 #Code to convert from internal coordintes to cartesian coordinates
 ##
-function Int_Cart(R,θ,α,β)
-    rH = 0.74#H2 bond distance
+function Int_Cart(R,θ,α,β;rH = 0.74)
+    #rH is the H2 bond distance
     rC = [1.26193, 1.34953, 1.23481, 1.36188, 1.17254]#C-C and C-N bond distances
     Coef = 4:-1:1 #Coeff to caclulate the bond deistances
     CoM_CN = (12*sum(Coef.*rC[1:4]) + 14*sum(rC))/(4*12+14) #centeer of mass of C5N group
