@@ -49,23 +49,3 @@ anim = @animate for i in 1:300
 end
 ##
 gif(anim, "C5N_H2.gif", fps = 30)
-##
-#plot([1.26193,0],[],color=["grey"])
-###
-#r=(Cord[7,:] - Cord[8,:])
-###
-#Cord=Int_Cart(2.5,50,30,60)
-#scatter(Cord[1:6,1],Cord[1:6,2],Cord[1:6,3],color=C[1:6], xlimits=(-4,4), ylimits=(-3,3), zlimits=(-4,4),markersize=10)
-#scatter!(Cord[7:8,1],Cord[7:8,2],Cord[7:8,3],color=C[7:8],markersize=8,xaxis=false,yaxis=false,zaxis=false)
-#plot!(Cord[7:8,1],Cord[7:8,2],Cord[7:8,3],color=C[7:8],linewidth=4,camera = (60, 10),legend=false)
-#savefig("Dummy.png")
-##
-#Vel = [] #Electronic repulsion vector
-#q = [6,6,6,6,6,7,1,1]#charge vector
-#for i in 1:7
-#    for j in i+1:8
-#        vel = q[i]*q[j]/norm(Cord[i]-Cord[j])
-#        append!(Vel,vel)
-#    end
-#end
-#Vel = sum(Vel)
