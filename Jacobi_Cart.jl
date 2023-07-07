@@ -15,7 +15,7 @@ function Int_Cart_C5N(R,θ,α,β;rH = 0.74)#For C5N + H2 system
     #All angles in degree
     rC = [1.26193, 1.34953, 1.23481, 1.36188, 1.17254]#C-C and C-N bond distances
     Coef = 4:-1:1 #Coeff to caclulate the bond deistances
-    CoM_CN = (12*sum(Coef.*rC[1:4]) + 14*sum(rC))/(4*12+14) #centeer of mass of C5N group
+    CoM_CN = (12*sum(Coef.*rC[1:4]) + 14*sum(rC))/(5*12+14) #centeer of mass of C5N group
     C_cord = [sum(rC[1:i]) for i in 1:5] 
     pushfirst!(C_cord,0) #The first carbon atom position
     C_cord = C_cord .- CoM_CN # We displace the origin so that the CoM(C5N) is at the orgin
