@@ -1,4 +1,4 @@
-# Jacobi_to_Cartesian
+# Jacobi to Cartesian
 A simple Julia script is provided here to convert Jacobi coordinates to Cartesian coordinates.
 This script if for 2 fragment system.
 The function defined in the code performs the conversion. The last part of the code deals with animations, which can be ignored if you do not wish to generate animations.
